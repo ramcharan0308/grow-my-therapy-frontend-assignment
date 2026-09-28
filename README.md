@@ -6,11 +6,11 @@ A modern, accessible, and high-performance digital practice homepage for **Dr. M
 
 ## 🌟 Assignment Objective & Deliverables
 
-- **Live Website:** `TBD`
-- **GitHub Repository:** `TBD`
-- **Loom Walkthrough:** `TBD`
+- **Live Website:** [https://grow-my-therapy-frontend-assignment-one.vercel.app/](https://grow-my-therapy-frontend-assignment-one.vercel.app/)
+- **GitHub Repository:** [https://github.com/ramcharan0308/grow-my-therapy-frontend-assignment](https://github.com/ramcharan0308/grow-my-therapy-frontend-assignment)
+- **Loom Walkthrough:** `[Pending Loom Video Link]`
 
-### Core Goals achieved:
+### Core Goals Achieved:
 1. **UI Layout Accuracy:** 1:1 structural reproduction of the benchmark website layout ([Conejo Valley Counseling](https://www.conejovalleycounseling.com/home)), preserving section order, grid systems, spacing, and responsive behavior.
 2. **Creative Redesign:** Completely new cohesive visual design system (Deep Forest Sage `#2D3A34`, Warm Alabaster Cream `#FAF8F5`, `Cormorant Garamond` serif headings, `Inter` body text).
 3. **Single Source of Truth:** 100% of therapist copy, services, modalities, client populations (adults only), and location details are derived strictly from the official Dr. Maya Reynolds profile without any invented claims.
@@ -61,7 +61,7 @@ A modern, accessible, and high-performance digital practice homepage for **Dr. M
 
 ### 1. Clone the Repository
 ```bash
-git clone <repository-url>
+git clone https://github.com/ramcharan0308/grow-my-therapy-frontend-assignment.git
 cd grow-my-therapy-frontend-assignment
 ```
 
@@ -90,15 +90,12 @@ npm run start
 
 ---
 
-## 📄 Documentation
+## 📄 Deliverable Documentation
 
 - [`docs/ASSIGNMENT.md`](file:///c:/Users/HP/Documents/Grow%20My%20Therapy_Assignment/docs/ASSIGNMENT.md) — Internship assignment specification.
-- [`docs/REFERENCE_ANALYSIS.md`](file:///c:/Users/HP/Documents/Grow%20My%20Therapy_Assignment/docs/REFERENCE_ANALYSIS.md) — 12-section layout analysis of benchmark site.
 - [`docs/maya-profile-source.md`](file:///c:/Users/HP/Documents/Grow%20My%20Therapy_Assignment/docs/maya-profile-source.md) — Authoritative Dr. Maya Reynolds profile source.
-- [`docs/REDESIGN_STRATEGY.md`](file:///c:/Users/HP/Documents/Grow%20My%20Therapy_Assignment/docs/REDESIGN_STRATEGY.md) — Brand identity & copywriting strategy.
-- [`docs/STAGE_5_QA_REPORT.md`](file:///c:/Users/HP/Documents/Grow%20My%20Therapy_Assignment/docs/STAGE_5_QA_REPORT.md) — Comprehensive QA audit report.
-- [`docs/STAGE_6A_PRODUCTION_REPORT.md`](file:///c:/Users/HP/Documents/Grow%20My%20Therapy_Assignment/docs/STAGE_6A_PRODUCTION_REPORT.md) — Production readiness report.
-- [`docs/DEPLOYMENT.md`](file:///c:/Users/HP/Documents/Grow%20My%20Therapy_Assignment/docs/DEPLOYMENT.md) — Deployment instructions.
+- [`docs/DEPLOYMENT.md`](file:///c:/Users/HP/Documents/Grow%20My%20Therapy_Assignment/docs/DEPLOYMENT.md) — Deployment & developer guide.
+- [`docs/LOOM_SCRIPT.md`](file:///c:/Users/HP/Documents/Grow%20My%20Therapy_Assignment/docs/LOOM_SCRIPT.md) — Loom walkthrough script.
 
 ---
 

@@ -66,6 +66,6 @@ This Next.js App Router project is configured for 1-click deployment on **Vercel
 
 ## 5. Assignment Deliverables
 
-- **Live Website:** `[PENDING STAGE 6B DEPLOYMENT]`
-- **GitHub Repository:** `[PENDING STAGE 6B REPO CREATION]`
-- **Loom Walkthrough:** `[PENDING STAGE 6B LOOM RECORDING]`
+- **Live Website:** [https://grow-my-therapy-frontend-assignment-one.vercel.app/](https://grow-my-therapy-frontend-assignment-one.vercel.app/)
+- **GitHub Repository:** [https://github.com/ramcharan0308/grow-my-therapy-frontend-assignment](https://github.com/ramcharan0308/grow-my-therapy-frontend-assignment)
+- **Loom Walkthrough:** `[Pending Loom Video Link]`
