@@ -1,7 +1,7 @@
 # Deployment & Developer Guide
 
 **Project Name:** Dr. Maya Reynolds, PsyD — Clinical Psychologist Website  
-**Assignment:** Stage 2 Grow My Therapy Internship Selection Process  
+**Assignment:** Grow My Therapy Frontend Developer Assignment  
 **Framework:** Next.js (App Router) + TypeScript + Tailwind CSS  
 
 ---
@@ -64,8 +64,7 @@ This Next.js App Router project is configured for 1-click deployment on **Vercel
 
 ---
 
-## 5. Assignment Deliverables
+## 5. Live Deployment & Repository
 
 - **Live Website:** [https://grow-my-therapy-frontend-assignment-one.vercel.app/](https://grow-my-therapy-frontend-assignment-one.vercel.app/)
 - **GitHub Repository:** [https://github.com/ramcharan0308/grow-my-therapy-frontend-assignment](https://github.com/ramcharan0308/grow-my-therapy-frontend-assignment)
-- **Loom Walkthrough:** `[Pending Loom Video Link]`

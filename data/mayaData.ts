@@ -1,5 +1,5 @@
 // Centralized Data File for Dr. Maya Reynolds, PsyD Website
-// SINGLE SOURCE OF TRUTH: docs/maya-profile-source.md
+// Authoritative practice profile data compiled from Dr. Maya Reynolds profile
 
 export const mayaData = {
   header: {

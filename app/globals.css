@@ -5,7 +5,7 @@
 @tailwind utilities;
 
 :root {
-  /* Dr. Maya Reynolds Brand Design System Tokens (Stage 4) */
+  /* Dr. Maya Reynolds Brand Design System Tokens */
   --color-primary: #2D3A34;         /* Deep Forest Sage */
   --color-primary-hover: #1E2823;   /* Dark Evergreen */
   --color-secondary: #5C6B61;       /* Slate Eucalyptus */

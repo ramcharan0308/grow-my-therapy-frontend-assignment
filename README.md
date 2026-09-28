@@ -1,20 +1,19 @@
 # Dr. Maya Reynolds, PsyD — Therapy Practice Website
 
-A modern, accessible, and high-performance digital practice homepage for **Dr. Maya Reynolds, PsyD** (Licensed Clinical Psychologist in Santa Monica, California), built for Stage 2 of the Grow My Therapy Internship Selection Process.
+A modern, accessible, and high-performance digital practice homepage for **Dr. Maya Reynolds, PsyD** (Licensed Clinical Psychologist in Santa Monica, California), built for the Grow My Therapy Frontend Developer Assignment.
 
 ---
 
-## 🌟 Assignment Objective & Deliverables
+## 🌟 Project Overview & Links
 
 - **Live Website:** [https://grow-my-therapy-frontend-assignment-one.vercel.app/](https://grow-my-therapy-frontend-assignment-one.vercel.app/)
 - **GitHub Repository:** [https://github.com/ramcharan0308/grow-my-therapy-frontend-assignment](https://github.com/ramcharan0308/grow-my-therapy-frontend-assignment)
-- **Loom Walkthrough:** `[Pending Loom Video Link]`
 
-### Core Goals Achieved:
-1. **UI Layout Accuracy:** 1:1 structural reproduction of the benchmark website layout ([Conejo Valley Counseling](https://www.conejovalleycounseling.com/home)), preserving section order, grid systems, spacing, and responsive behavior.
+### Core Highlights:
+1. **Responsive Layout:** Recreated the required section structure and responsive layout while applying a new visual design tailored to the practice.
 2. **Creative Redesign:** Completely new cohesive visual design system (Deep Forest Sage `#2D3A34`, Warm Alabaster Cream `#FAF8F5`, `Cormorant Garamond` serif headings, `Inter` body text).
 3. **Single Source of Truth:** 100% of therapist copy, services, modalities, client populations (adults only), and location details are derived strictly from the official Dr. Maya Reynolds profile without any invented claims.
-4. **New Custom Section:** Added **"Our Santa Monica Office"** (`OfficeSection`), featuring official office photography and practice environment details.
+4. **Custom Section:** Features **"Our Santa Monica Office"** (`OfficeSection`), highlighting official office photography and practice environment details.
 
 ---
 
@@ -41,7 +40,7 @@ A modern, accessible, and high-performance digital practice homepage for **Dr. M
   7. How We Work / About Dr. Maya Reynolds (Therapist bio with official headshot)
   8. Mid-page Image Banner (Visual divider)
   9. Primary Clinical Specialties (4 core service cards)
-  10. **Our Santa Monica Office (NEW SECTION)** (Highlighting private, quiet, natural-light environment, in-person Santa Monica care, and California telehealth)
+  10. **Our Santa Monica Office** (Highlighting private, quiet, natural-light environment, in-person Santa Monica care, and California telehealth)
   11. Schedule Consultation CTA (Conversion block)
   12. Frequently Asked Questions (Accessible keyboard-navigable FAQ Accordion with `aria-expanded`)
   13. Practice Footer (Location, navigation, telehealth notice, core specialties)
@@ -88,15 +87,4 @@ npm run build
 npm run start
 ```
 
----
-
-## 📄 Deliverable Documentation
-
-- [`docs/ASSIGNMENT.md`](file:///c:/Users/HP/Documents/Grow%20My%20Therapy_Assignment/docs/ASSIGNMENT.md) — Internship assignment specification.
-- [`docs/maya-profile-source.md`](file:///c:/Users/HP/Documents/Grow%20My%20Therapy_Assignment/docs/maya-profile-source.md) — Authoritative Dr. Maya Reynolds profile source.
-- [`docs/DEPLOYMENT.md`](file:///c:/Users/HP/Documents/Grow%20My%20Therapy_Assignment/docs/DEPLOYMENT.md) — Deployment & developer guide.
-- [`docs/LOOM_SCRIPT.md`](file:///c:/Users/HP/Documents/Grow%20My%20Therapy_Assignment/docs/LOOM_SCRIPT.md) — Loom walkthrough script.
-
----
-
-&copy; 2026 Dr. Maya Reynolds, PsyD. Built for Stage 2 Grow My Therapy Selection Process.
+&copy; 2026 Dr. Maya Reynolds, PsyD. Built for the Grow My Therapy Selection Process.
