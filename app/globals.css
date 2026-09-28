@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Dr. Maya Reynolds Brand Design System Tokens (Stage 4) */
+  --color-primary: #2D3A34;         /* Deep Forest Sage */
+  --color-primary-hover: #1E2823;   /* Dark Evergreen */
+  --color-secondary: #5C6B61;       /* Slate Eucalyptus */
+  --color-accent: #D4C4B5;          /* Warm Oatmeal Sand */
+  --color-bg: #FAF8F5;              /* Warm Alabaster Cream */
+  --color-surface: #F2ECE4;         /* Soft Natural Stone */
+  --color-card: #FFFFFF;            /* Pure White */
+  --color-text: #1F2421;            /* Deep Slate Charcoal (15:1 Contrast) */
+  --color-muted: #525B56;           /* Muted Sage Slate */
+  --color-border: #E4DDD3;          /* Soft Warm Border */
+
+  --font-sans: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-heading: 'Cormorant Garamond', Georgia, serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  body {
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    font-family: var(--font-sans);
+    line-height: 1.65;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    color: var(--color-text);
+    letter-spacing: -0.015em;
+  }
+}
+
+/* Custom Design Utility Tokens */
+.bg-cream-alabaster {
+  background-color: #FAF8F5;
+}
+
+.bg-natural-stone {
+  background-color: #F2ECE4;
+}
+
+.bg-deep-forest {
+  background-color: #2D3A34;
+}
+
+.text-deep-forest {
+  color: #2D3A34;
+}
+
+.border-warm-border {
+  border-color: #E4DDD3;
+}
+
+.font-heading-serif {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+}
