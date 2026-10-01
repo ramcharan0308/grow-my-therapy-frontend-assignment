@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600;1,700&family=Mulish:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600;700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -13,12 +13,12 @@
   --color-bg: #FAF8F5;              /* Warm Alabaster Cream */
   --color-surface: #F2ECE4;         /* Soft Natural Stone */
   --color-card: #FFFFFF;            /* Pure White */
-  --color-text: #1F2421;            /* Deep Slate Charcoal (15:1 Contrast) */
+  --color-text: #1F2421;            /* Deep Slate Charcoal */
   --color-muted: #525B56;           /* Muted Sage Slate */
   --color-border: #E4DDD3;          /* Soft Warm Border */
 
-  --font-sans: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
-  --font-heading: 'Cormorant Garamond', Georgia, serif;
+  --font-sans: 'Mulish', 'Muli', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-heading: 'Cormorant Infant', 'Cormorant Garamond', Georgia, serif;
 }
 
 @layer base {
@@ -66,4 +66,18 @@
 
 .font-heading-serif {
   font-family: 'Cormorant Garamond', Georgia, serif;
+}
+
+/* Ensure Next.js dev indicators and editor overlays never render on page */
+nextjs-portal,
+[data-nextjs-toast],
+[data-nextjs-dialog-overlay],
+#nextjs-dev-overlay,
+button[aria-label="Open Next.js Dev Tools"],
+[data-next-badge],
+[data-nextjs-dev-tools-button] {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
 }

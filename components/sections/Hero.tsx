@@ -1,57 +1,82 @@
 import React from "react";
 import { Container } from "@/components/ui/Container";
-import { Button } from "@/components/ui/Button";
 import { mayaData } from "@/data/mayaData";
 
 export const HeroSection: React.FC = () => {
   const { hero } = mayaData;
 
   return (
-    <section className="py-16 md:py-24 bg-[#FAF8F5] overflow-hidden border-b border-theme-border/50">
+    <section className="relative pt-8 sm:pt-10 lg:pt-12 pb-16 md:pb-24 lg:pb-32 bg-[#FAF8F5] overflow-hidden border-b border-theme-border/40">
       <Container size="lg">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
-          {/* Left Column: Headline & Action */}
-          <div className="lg:col-span-7 space-y-6 text-left">
-            <span className="inline-block text-xs md:text-sm uppercase tracking-widest font-semibold text-theme-secondary">
-              {hero.eyebrow}
-            </span>
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl font-semibold leading-tight text-theme-text font-heading">
-              {hero.h1}
-            </h1>
-            <p className="text-base md:text-lg text-theme-muted leading-relaxed max-w-2xl">
-              {hero.body}
-            </p>
-            <div className="pt-2 flex flex-wrap gap-4">
-              <Button variant="primary" size="lg">
-                <a href="#contact">{hero.primaryCTA}</a>
-              </Button>
-              <Button variant="outline" size="lg">
-                <a href="#office">{hero.secondaryCTA}</a>
-              </Button>
+        {/* Proportional Grid matching reference layout: 5 cols Left Portrait, 5 cols Center Text, 2 cols Right Accent */}
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 xl:gap-12 items-start">
+          
+          {/* Desktop Left Column: Clean Rectangular Portrait (5 cols) */}
+          <div className="order-2 lg:order-1 lg:col-span-5 flex justify-center lg:justify-start">
+            {/* Desktop single tall portrait */}
+            <div className="hidden lg:block w-full max-w-md">
+              <div className="overflow-hidden shadow-sm aspect-[3/4] rounded-sm border border-theme-border/60 bg-[#F2ECE4]">
+                <img
+                  src={hero.headshotImage}
+                  alt="Dr. Maya Reynolds, PsyD — Licensed Clinical Psychologist in Santa Monica, CA"
+                  className="w-full h-full object-cover object-top"
+                />
+              </div>
+            </div>
+
+            {/* Mobile Image Composition matching reference: Primary image on left, accent image nested on right */}
+            <div className="grid grid-cols-12 gap-3 w-full lg:hidden pt-4">
+              <div className="col-span-8 overflow-hidden shadow-sm aspect-[3/4] rounded-sm border border-theme-border/60 bg-[#F2ECE4]">
+                <img
+                  src={hero.headshotImage}
+                  alt="Dr. Maya Reynolds, PsyD — Licensed Clinical Psychologist"
+                  className="w-full h-full object-cover object-top"
+                />
+              </div>
+              <div className="col-span-4 flex items-end">
+                <div className="w-full overflow-hidden shadow-sm aspect-[2/3] rounded-sm border border-theme-border/60 bg-[#F2ECE4]">
+                  <img
+                    src={hero.officeImage}
+                    alt="Santa Monica therapy office natural light interior"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+              </div>
             </div>
           </div>
 
-          {/* Right Column: Dual Image Composition */}
-          <div className="lg:col-span-5 relative">
-            <div className="relative mx-auto max-w-md lg:max-w-none">
-              {/* Primary Headshot */}
-              <div className="relative z-10 rounded-2xl overflow-hidden shadow-md aspect-[4/5] border border-theme-border/60">
-                <img
-                  src={hero.headshotImage}
-                  alt="Dr. Maya Reynolds, PsyD — Licensed Clinical Psychologist in Santa Monica"
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              {/* Secondary Office Ambient Overlay */}
-              <div className="absolute -bottom-6 -left-6 w-2/3 rounded-xl overflow-hidden shadow-xl border-4 border-white z-20 hidden sm:block aspect-[4/3]">
-                <img
-                  src={hero.officeImage}
-                  alt="Calm, bright Santa Monica therapy seating area"
-                  className="w-full h-full object-cover"
-                />
-              </div>
+          {/* Center Column: Editorial Content with Spacious Rhythm (5 cols) */}
+          <div className="order-1 lg:order-2 lg:col-span-5 space-y-6 lg:space-y-7 text-left">
+            <p className="text-xs md:text-sm uppercase tracking-widest font-semibold text-theme-secondary font-sans">
+              {hero.eyebrow}
+            </p>
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[2.85rem] xl:text-[3.25rem] font-normal leading-[1.15] text-theme-text font-heading tracking-tight">
+              Grounded, Evidence-Based Therapy for Adults Navigating Anxiety, Trauma & <em className="italic font-normal text-theme-secondary">Burnout</em>.
+            </h1>
+            <p className="text-base md:text-lg text-theme-muted leading-[1.8] font-sans">
+              {hero.body}
+            </p>
+            <div className="pt-2">
+              <a
+                href="#contact"
+                className="inline-block w-full sm:w-auto text-center rounded-sm bg-theme-primary text-white px-9 py-4 text-xs sm:text-sm font-medium uppercase tracking-widest hover:bg-theme-primary-hover transition-colors shadow-sm"
+              >
+                {hero.primaryCTA}
+              </a>
             </div>
           </div>
+
+          {/* Far-Right Column: Secondary Accent Photo matching reference proportions (2 cols) */}
+          <div className="hidden lg:flex lg:order-3 lg:col-span-2 justify-end self-end pt-12 lg:pt-20 xl:pt-24">
+            <div className="w-full max-w-[220px] overflow-hidden shadow-sm aspect-[2/3] rounded-sm border border-theme-border/50 bg-[#F2ECE4]">
+              <img
+                src={hero.officeImage}
+                alt="Santa Monica therapy office interior"
+                className="w-full h-full object-cover"
+              />
+            </div>
+          </div>
+
         </div>
       </Container>
     </section>

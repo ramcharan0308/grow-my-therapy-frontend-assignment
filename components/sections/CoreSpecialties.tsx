@@ -1,42 +1,53 @@
 import React from "react";
 import { Container } from "@/components/ui/Container";
-import { SectionHeading } from "@/components/ui/SectionHeading";
-import { Button } from "@/components/ui/Button";
 import { mayaData } from "@/data/mayaData";
 
 export const CoreSpecialtiesSection: React.FC = () => {
   const { coreSpecialties } = mayaData;
 
   return (
-    <section id="specialties" className="py-16 md:py-24 bg-white border-b border-theme-border/50">
+    <section id="specialties" className="py-20 md:py-32 lg:py-40 bg-white border-b border-theme-border/40">
       <Container size="lg">
-        <SectionHeading
-          title={coreSpecialties.h3}
-          subtitle={coreSpecialties.subtitle}
-          align="center"
-        />
+        {/* Layout: Left Column Heading (~33%), Right Area 2x2 Editorial Grid (~67%) */}
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 xl:gap-20 items-start">
+          
+          {/* Left Column: Heading with italic accent word */}
+          <div className="lg:col-span-4 space-y-4">
+            <h3 className="text-3xl sm:text-4xl lg:text-[2.85rem] font-normal font-heading text-theme-text tracking-tight leading-[1.2]">
+              Our <em className="italic font-normal text-theme-secondary">Specialties</em> Include…
+            </h3>
+            {coreSpecialties.subtitle && (
+              <p className="text-base text-theme-muted leading-relaxed font-sans pt-1">
+                {coreSpecialties.subtitle}
+              </p>
+            )}
+          </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-12">
-          {coreSpecialties.items.map((item) => (
-            <div
-              key={item.id}
-              className="bg-[#FAF8F5] p-6 rounded-xl border border-theme-border/70 shadow-2xs flex flex-col justify-between space-y-4 hover:shadow-sm transition-all"
-            >
-              <div className="space-y-3">
-                <h4 className="text-xl font-bold font-heading text-theme-text">
-                  {item.title}
-                </h4>
-                <p className="text-sm text-theme-muted leading-relaxed">
-                  {item.description}
-                </p>
+          {/* Right Area: 2x2 Clean Unboxed Editorial Grid */}
+          <div className="lg:col-span-8 grid grid-cols-1 sm:grid-cols-2 gap-x-12 lg:gap-x-16 gap-y-16 lg:gap-y-20">
+            {coreSpecialties.items.map((item) => (
+              <div key={item.id} className="space-y-5 flex flex-col justify-between">
+                <div className="space-y-3">
+                  <h4 className="text-xl sm:text-2xl font-normal font-heading text-theme-text leading-snug">
+                    {item.title}
+                  </h4>
+                  <p className="text-base text-theme-muted leading-[1.8] font-sans">
+                    {item.description}
+                  </p>
+                </div>
+                <div className="pt-2">
+                  <a
+                    href="#contact"
+                    className="inline-flex items-center text-xs uppercase tracking-widest font-semibold text-theme-primary hover:text-theme-primary-hover transition-colors group font-sans"
+                  >
+                    <span>{item.cta}</span>
+                    <span className="ml-2 transition-transform duration-200 group-hover:translate-x-1">&rarr;</span>
+                  </a>
+                </div>
               </div>
-              <div className="pt-2">
-                <Button variant="ghost" size="sm" className="px-0 hover:bg-transparent text-theme-primary font-semibold">
-                  <a href="#contact">{item.cta} &rarr;</a>
-                </Button>
-              </div>
-            </div>
-          ))}
+            ))}
+          </div>
+
         </div>
       </Container>
     </section>

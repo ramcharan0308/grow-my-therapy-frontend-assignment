@@ -2,9 +2,8 @@
 
 import React, { useState } from "react";
 import { Container } from "@/components/ui/Container";
-import { SectionHeading } from "@/components/ui/SectionHeading";
 import { mayaData } from "@/data/mayaData";
-import { ChevronDown } from "lucide-react";
+import { Plus, Minus } from "lucide-react";
 
 export const FAQSection: React.FC = () => {
   const { faqs } = mayaData;
@@ -15,42 +14,43 @@ export const FAQSection: React.FC = () => {
   };
 
   return (
-    <section id="faqs" className="py-16 md:py-24 bg-white border-b border-theme-border/50">
+    <section id="faqs" className="py-20 md:py-32 bg-white border-b border-theme-border/40">
       <Container size="md">
-        <SectionHeading
-          title={faqs.h2}
-          subtitle={faqs.subtitle}
-          align="center"
-        />
+        {/* Section Heading */}
+        <div className="text-center mb-14 space-y-3">
+          <h2 className="text-3xl sm:text-4xl lg:text-[2.85rem] font-normal font-heading text-theme-text tracking-tight leading-[1.2]">
+            {faqs.h2}
+          </h2>
+          {faqs.subtitle && (
+            <p className="text-base md:text-lg text-theme-muted max-w-xl mx-auto font-sans pt-1">
+              {faqs.subtitle}
+            </p>
+          )}
+        </div>
 
-        <div className="space-y-4 mt-10">
+        {/* Clean Editorial Accordion List (Minimal horizontal divider lines) */}
+        <div className="divide-y divide-theme-border/60 border-t border-b border-theme-border/60">
           {faqs.items.map((item, index) => {
             const isOpen = openIndex === index;
             const headingId = `faq-heading-${index}`;
             const contentId = `faq-content-${index}`;
 
             return (
-              <div
-                key={index}
-                className="bg-[#FAF8F5] rounded-xl border border-theme-border/70 overflow-hidden transition-all duration-200"
-              >
+              <div key={index} className="py-2">
                 <h3>
                   <button
                     id={headingId}
                     aria-expanded={isOpen}
                     aria-controls={contentId}
                     onClick={() => toggleFAQ(index)}
-                    className="w-full px-6 py-5 flex items-center justify-between text-left focus:outline-none focus:ring-2 focus:ring-[#2D3A34] focus:ring-inset"
+                    className="w-full py-6 flex items-center justify-between text-left focus:outline-none focus:ring-2 focus:ring-theme-primary/40 focus:ring-inset rounded-sm group transition-colors"
                   >
-                    <span className="text-base md:text-lg font-semibold font-heading text-theme-text pr-4">
+                    <span className="text-lg sm:text-xl font-normal font-heading text-theme-text group-hover:text-theme-primary transition-colors pr-6">
                       {item.question}
                     </span>
-                    <ChevronDown
-                      size={20}
-                      className={`text-theme-secondary transition-transform duration-300 flex-shrink-0 ${
-                        isOpen ? "transform rotate-180" : ""
-                      }`}
-                    />
+                    <span className="text-theme-secondary transition-colors duration-200 flex-shrink-0">
+                      {isOpen ? <Minus size={20} /> : <Plus size={20} />}
+                    </span>
                   </button>
                 </h3>
                 {isOpen && (
@@ -58,7 +58,7 @@ export const FAQSection: React.FC = () => {
                     id={contentId}
                     role="region"
                     aria-labelledby={headingId}
-                    className="px-6 pb-6 pt-1 text-sm md:text-base text-theme-muted leading-relaxed border-t border-theme-border/40"
+                    className="pb-7 pt-1 text-base text-theme-muted leading-[1.8] font-sans"
                   >
                     {item.answer}
                   </div>
