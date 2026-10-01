@@ -8,6 +8,7 @@ A modern, accessible, and high-performance digital practice homepage for **Dr. M
 
 - **Live Website:** [https://grow-my-therapy-frontend-assignment-one.vercel.app/](https://grow-my-therapy-frontend-assignment-one.vercel.app/)
 - **GitHub Repository:** [https://github.com/ramcharan0308/grow-my-therapy-frontend-assignment](https://github.com/ramcharan0308/grow-my-therapy-frontend-assignment)
+- **Loom Walkthrough:** [https://www.loom.com/share/89ad19d300f243aba1930c205c7bcad7](https://www.loom.com/share/89ad19d300f243aba1930c205c7bcad7)
 
 ### Core Highlights:
 1. **Responsive Layout:** Recreated the required section structure and responsive layout while applying a new visual design tailored to the practice.
